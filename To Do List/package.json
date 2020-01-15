@@ -1,0 +1,16 @@
+{
+  "name": "to-do-list-in-js",
+  "version": "1.0.0",
+  "description": "Learning to do a todo list in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Cherian",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

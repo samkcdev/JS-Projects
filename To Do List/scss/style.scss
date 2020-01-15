@@ -1,0 +1,73 @@
+@import "normalize";
+@import "base";
+@import "header";
+@import "variables";
+
+h2 {
+  text-align: center;
+}
+
+.parent-cotainer {
+  border: 1px solid $border-color;
+  padding: 0.5em;
+  width: 45%;
+  margin: 10px auto;
+}
+.todo-section {
+  border-bottom: 1px solid #7b7b7b;
+  margin-bottom: 20px;
+  .msg-empty {
+    font-style: italic;
+    color: #ccc;
+  }
+}
+
+.list-section {
+  li {
+    position: relative;
+    border: 1px solid $border-color;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 0.5em;
+    border-radius: $border-radius;
+
+    div {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      .delete,
+      .add {
+        border: none;
+        background: #ccc;
+        cursor: pointer;
+      }
+      .delete {
+        color: red;
+      }
+      .add {
+        position: relative;
+        color: green;
+        &:after {
+          content: "";
+          width: 1px;
+          background: #b9b9b9;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.done-list-section li {
+  border: 1px solid $border-color;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: $border-radius;
+}

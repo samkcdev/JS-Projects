@@ -1,0 +1,33 @@
+@import "variables";
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  .input-container {
+    flex: 0 1 80%;
+    input {
+      border: 1px solid $border-color;
+      border-radius: 5px 0 0 5px;
+      padding: 0.8em 0.5em;
+      width: 100%;
+      margin: 0 0 10px 0;
+      &:focus {
+        outline: none;
+      }
+    }
+    .error {
+      color: red;
+      display: none;
+    }
+  }
+
+  button {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 0.9em 0.5em;
+    flex: 0 1 20%;
+    border-radius: 0 5px 5px 0;
+  }
+}
