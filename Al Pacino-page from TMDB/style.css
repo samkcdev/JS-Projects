@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.headers {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sub-header {
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+}
+
+.banner-imgs {
+  flex: 0 1 20%;
+  margin-right: 10px;
+  padding: 10px;
+}
+.main-content-parent {
+  flex: 1 1 0;
+}
+
+.main-detail {
+  margin-bottom: 10px;
+}
+.movie-list ul {
+  list-style: none;
+}
+.movie-list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.credits-list li {
+  margin: 5px;
+  position: relative;
+}
+
+.credits-list div {
+  display: block;
+  background: rgba(29, 29, 29, 0.94);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  color: #fff;
+  font-size: 16px;
+}
+
+.credits-list div h3 {
+  background: #0e5d7bf2;
+  padding: 5px;
+}
+
+.credits-list div p {
+  padding: 5px;
+}
