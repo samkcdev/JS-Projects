@@ -37,6 +37,8 @@ img {
 
 .main-detail {
   margin-bottom: 10px;
+  background: #eee;
+  padding: 15px;
 }
 .movie-list ul {
   list-style: none;
