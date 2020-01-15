@@ -1,0 +1,1 @@
+Projects to learn and understand JS better.
