@@ -5,6 +5,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #6e8894;
 }
 .headers {
   font-family: "Poppins", sans-serif;
@@ -20,24 +21,15 @@ img {
 }
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  display: flex;
-  height: 100vh;
+  background: #fff;
 }
 
-.banner-imgs {
-  flex: 0 1 20%;
-  margin-right: 10px;
-  padding: 10px;
-}
-.main-content-parent {
-  flex: 1 1 0;
+.main-section {
+  padding: 0 20px;
 }
 
-.main-detail {
-  margin-bottom: 10px;
-}
 .movie-list ul {
   list-style: none;
 }
@@ -70,4 +62,26 @@ img {
 
 .credits-list div p {
   padding: 5px;
+}
+
+.banner {
+  height: 300px;
+}
+
+.bio-wrap-details {
+  display: flex;
+}
+
+.bio-wrap-detailed {
+  margin-right: 15px;
+  flex: 2 1 0;
+}
+
+.bio-wrap-trivia {
+  flex: 1 1 0;
+}
+
+.bio-wrap-trivia {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
