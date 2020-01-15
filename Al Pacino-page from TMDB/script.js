@@ -49,7 +49,7 @@ fetchURL
       appendElement(credits, movieCard);
     }
 
-    p.innerHTML = data.biography;
+    p.innerHTML = data.biography.replace(/\n/g, "<br/>");
     headerTitle.innerHTML = data.name;
     bannerImg.src = imageURLProfile + imagefilePath[20];
 
