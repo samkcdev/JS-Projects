@@ -49,12 +49,6 @@ fetchURL
       appendElement(credits, movieCard);
     }
 
-    // for (let i = 0; i < moviePoster.length; i++) {
-    //   moviePoster = createElement("li");
-    //   movieCard.innerHTML = movieCredits[i];
-    //   appendElement(credits, movieCard);
-    // }
-
     p.innerHTML = data.biography;
     headerTitle.innerHTML = data.name;
     bannerImg.src = imageURLProfile + imagefilePath[20];
