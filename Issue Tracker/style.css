@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+label{
+      color:#fff;
+      margin-bottom: 5px;
+    display: block;
+}
+
+button{
+      padding: 5px 10px;
+      background: #2E86AB; 
+      border:none;
+      color:#fff;
+      cursor: pointer;
+      outline: none;
+}
+
+button[type="reset"]{
+      background-color: #C95D5D;
+}
+
+input,select,textarea {
+  padding: 10px;
+  outline: none;
+}
+
+.issue-form {
+  border-radius: 5px;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  background: #565554;
+    box-shadow: 0 0 10px 1px rgba(84,106,123,0.2);
+
+}
+
+
+
+
+
+
+
+
+}
+
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-element {
+  margin-bottom: 20px;
+}
+
+.width-full {
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+}
