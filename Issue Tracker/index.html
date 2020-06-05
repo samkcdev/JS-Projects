@@ -15,52 +15,52 @@
       Issue Tracker with Local storage
     </h2>
     <div class="issue-form">
-      <form action="">
-        <div class="form-container">
-          <div class="form-element">
-            <label for="subject">Ticket Subject</label>
-            <input
-              class="width-full"
-              id="subject"
-              type="text"
-              placeholder="Please write ticket subject here"
-            />
-          </div>
-          <div class="form-element">
-            <label for="desc">Description</label>
-            <textarea
-              class="width-full"
-              name=""
-              id="desc"
-              cols="40"
-              rows="5"
-              placeholder="Write Detailed description"
-            ></textarea>
-          </div>
-          <div class="form-element">
-            <label for="severity">Select Severity</label>
-            <select class="width-full" name="severity" id="severity">
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
-          </div>
-          <div class="form-element">
-            <label for="assignedperson">Assign this ticket</label>
-            <input
-              class="width-full"
-              type="text"
-              placeholder="Please type a name to assign"
-            />
-          </div>
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+      <div class="form-container">
+        <div class="form-element">
+          <label for="subject">Ticket Subject</label>
+          <input
+            class="width-full"
+            id="subject"
+            type="text"
+            placeholder="Please write ticket subject here"
+          />
         </div>
-      </form>
+        <div class="form-element">
+          <label for="desc">Description</label>
+          <textarea
+            class="width-full"
+            name=""
+            id="desc"
+            cols="40"
+            rows="5"
+            placeholder="Write Detailed description"
+          ></textarea>
+        </div>
+        <div class="form-element">
+          <label for="severity">Select Severity</label>
+          <select class="width-full" name="severity" id="severity">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div class="form-element">
+          <label for="assignedperson">Assign this ticket</label>
+          <input
+            class="width-full"
+            type="text"
+            id="assignedperson"
+            placeholder="Please type a name to assign"
+          />
+        </div>
+        <button id="submitForm">Submit</button>
+        <button type="reset" id="resetForm">Reset</button>
+      </div>
     </div>
     <h2 style="text-align: center;">
       Issues List
     </h2>
+    <div class="issue-card"></div>
 
     <script src="script.js"></script>
   </body>

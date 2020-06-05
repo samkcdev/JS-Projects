@@ -11,26 +11,28 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-label{
-      color:#fff;
-      margin-bottom: 5px;
-    display: block;
+label {
+  color: #fff;
+  margin-bottom: 5px;
+  display: block;
 }
 
-button{
-      padding: 5px 10px;
-      background: #2E86AB; 
-      border:none;
-      color:#fff;
-      cursor: pointer;
-      outline: none;
+button {
+  padding: 5px 10px;
+  background: #2e86ab;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
 }
 
-button[type="reset"]{
-      background-color: #C95D5D;
+button[type="reset"] {
+  background-color: #c95d5d;
 }
 
-input,select,textarea {
+input,
+select,
+textarea {
   padding: 10px;
   outline: none;
 }
@@ -41,17 +43,7 @@ input,select,textarea {
   width: 60%;
   margin: 0 auto;
   background: #565554;
-    box-shadow: 0 0 10px 1px rgba(84,106,123,0.2);
-
-}
-
-
-
-
-
-
-
-
+  box-shadow: 0 0 10px 1px rgba(84, 106, 123, 0.2);
 }
 
 .form-container {
@@ -67,6 +59,6 @@ input,select,textarea {
   width: 100%;
 }
 
-input {
-  padding: 10px;
+.issue-card {
+  border: 1px solid #ccc;
 }
