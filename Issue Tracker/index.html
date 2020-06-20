@@ -10,12 +10,12 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="showData()">
     <h2 style="text-align: center;">
       Issue Tracker with Local storage
     </h2>
     <div class="issue-form">
-      <div class="form-container">
+      <form class="form-container">
         <div class="form-element">
           <label for="subject">Ticket Subject</label>
           <input
@@ -23,7 +23,10 @@
             id="subject"
             type="text"
             placeholder="Please write ticket subject here"
+            autocomplete="off"
           />
+          <p class="count"></p>
+          <span class="form-error"></span>
         </div>
         <div class="form-element">
           <label for="desc">Description</label>
@@ -53,14 +56,15 @@
             placeholder="Please type a name to assign"
           />
         </div>
-        <button id="submitForm">Submit</button>
+        <button id="submitForm" type="submit">Submit</button>
         <button type="reset" id="resetForm">Reset</button>
-      </div>
+      </form>
     </div>
+
     <h2 style="text-align: center;">
       Issues List
     </h2>
-    <div class="issue-card"></div>
+    <div class="issue-container"></div>
 
     <script src="script.js"></script>
   </body>

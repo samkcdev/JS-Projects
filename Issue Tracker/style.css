@@ -29,6 +29,10 @@ button {
 button[type="reset"] {
   background-color: #c95d5d;
 }
+button.delete-btn {
+  background-color: #c95d5d;
+  margin-left: 10px;
+}
 
 input,
 select,
@@ -61,4 +65,19 @@ textarea {
 
 .issue-card {
   border: 1px solid #ccc;
+  padding: 5px;
+  width: 60%;
+  margin: 0 auto 10px auto;
+}
+
+.issue-card span {
+  color: #955311;
+  font-weight: 600;
+}
+
+.form-error {
+  color: #febcbc;
+}
+.count {
+  color: #fff;
 }
