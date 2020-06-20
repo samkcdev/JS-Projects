@@ -1,4 +1,5 @@
 //select form elements
+let form = document.querySelector("form-container");
 let subjectInput = document.getElementById("subject");
 let descInput = document.getElementById("desc");
 let severitySelect = document.getElementById("severity");
@@ -11,10 +12,8 @@ let randomNumber = Math.floor(Math.random() * 1500) + 1;
 
 submitBtn.addEventListener("click", getFormData);
 
-console.log(subjectInput.value.length);
 // document.addEventListener("DOMContentLoaded", showData);
 
-// showData();
 subjectInput.addEventListener("keydown", limitChars);
 function limitChars(e) {
   let charCount = document.querySelector(".count");
@@ -43,6 +42,7 @@ function getFormData(e) {
   };
 
   setDataLocally(storeLocally, valObj);
+  form.reset();
 
   e.preventDefault();
 }
@@ -70,33 +70,11 @@ function showData() {
     var divTag = document.createElement("div");
 
     var uniqueId = arrayInlocal[i].id;
-
-    var arrayIndex = i;
-
-    // var cardActionCloseBtn = document.createElement("button");
-    // var cardActionDeleteBtn = document.createElement("button");
-
-    // cardActionCloseBtn.setAttribute("class", "close-btn");
-    // cardActionDeleteBtn.setAttribute("class", "delete-btn");
-    // cardActionCloseBtn.innerText = "Close Case";
-    // cardActionDeleteBtn.innerText = "Delete Case";
-
-    // cardActionCloseBtn.addEventListener("click", function () {
-
-    // });
-
-    // cardActionDeleteBtn.addEventListener("click", function () {
-    //   console.log("arrayIndex", arrayIndex);
-    //   console.log("uniqueID", uniqueId);
-    //   // if (uniqueId) {
-    //   //   arrayInlocal.splice(arrayIndex, 1);
-    //   //   console.log("arrayInlocal", arrayInlocal);
-    //   //   storeLocally.setItem("formData", JSON.stringify(arrayInlocal));
-    //   // }
-    //   // showData();
-    // });
-
-    var ticketNumber = i + 1;
+    var status = arrayInlocal[i].caseStatus;
+    var subject = arrayInlocal[i].subjectVal;
+    var decprition = arrayInlocal[i].descVal;
+    var priority = arrayInlocal[i].severityVal;
+    var assignedPreson = arrayInlocal[i].assignedVal;
 
     divTag.setAttribute("class", "issue-card");
 
@@ -111,31 +89,31 @@ function showData() {
       "<span>" +
       "Case Status:" +
       "</span>" +
-      arrayInlocal[i].caseStatus +
+      status +
       "</p>" +
       "<p>" +
       "<span>" +
       "Subject: " +
       "</span>" +
-      arrayInlocal[i].subjectVal +
+      subject +
       "</p>" +
       "<p>" +
       "<span>" +
       "Desc: " +
       "</span>" +
-      arrayInlocal[i].descVal +
+      decprition +
       "</p>" +
       "<p>" +
       "<span>" +
       "Severity: " +
       "</span>" +
-      arrayInlocal[i].severityVal +
+      priority +
       "</p>" +
       "<p>" +
       "<span>" +
       "Assigned: " +
       "</span>" +
-      arrayInlocal[i].assignedVal +
+      assignedPreson +
       "</p>" +
       "<div>" +
       "<button onclick =\"closeStatus('" +
@@ -149,14 +127,6 @@ function showData() {
       "Delete Case" +
       "</button>" +
       "</div>";
-
-    // divTag.appendChild(cardActionCloseBtn);
-    // divTag.appendChild(cardActionDeleteBtn);
-
-    // let closeBtn = document.getElementById("close-btn");
-    // let delBtn = document.getElementById("delete-btn");
-    // console.log("closeBtn", closeBtn);
-    // closeBtn.addEventListener("click", closeStatus);
 
     ticketContainer.appendChild(divTag);
   }
