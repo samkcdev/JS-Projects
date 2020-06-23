@@ -144,6 +144,39 @@ function closeStatus(id) {
 }
 
 function deleteIssue(id) {
+  modalGenerator(id);
+}
+
+//modal for delete confirmation
+//click modal generated dynamically
+var divModalParent = document.querySelector(".modal-body-overlay");
+function modalGenerator(id) {
+  divModalParent.classList.add("show-modal");
+  let createModalBody = document.createElement("div");
+
+  createModalBody.setAttribute("class", "modal-body");
+  createModalBody.innerHTML =
+    "<h3>" +
+    "Are you sure?" +
+    "</h3>" +
+    "<div>" +
+    "<button>" +
+    "No" +
+    "</button>" +
+    "<button onclick=\"deleteIssueFromModal('" +
+    id +
+    "')\">" +
+    "Yes" +
+    "</button>" +
+    "</div>";
+  divModalParent.appendChild(createModalBody);
+}
+
+function dismissModal(divModalParent) {
+  divModalParent.classList.remove("show-modal");
+}
+
+function deleteIssueFromModal(id) {
   let issuesArr = JSON.parse(storeLocally.getItem("formData"));
   for (let i = 0; i < issuesArr.length; i++) {
     if (issuesArr[i].id == id) {
@@ -151,5 +184,7 @@ function deleteIssue(id) {
     }
   }
   storeLocally.setItem("formData", JSON.stringify(issuesArr));
+  dismissModal(divModalParent);
+
   showData();
 }
