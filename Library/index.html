@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="banner">
+    <h1>My Library Keeper</h1>
+  </div>
+
+  <!-- <button id="showForm">Add New Book</button> -->
+  <form>
+    <div class="book-form">
+      <input id="bookTitle" type="text" placeholder="Enter Book title" required>
+      <input id="author" type="text" placeholder="Enter Author Name" required>
+      <input id="pagenumbers" type="number" placeholder="Enter number of pages" required>
+    </div>
+
+    <div class="book-form">
+      <input type="radio" name="status" id="cr" value="currently reading"> Currently Reading
+      <input type="radio" name="status" id="read" value="read">
+      Read
+      <input type="radio" name="status" id="readStatus" value="not read">
+      Not Read
+    </div>
+
+    <button id="addBook" type="submit">Add Book</button>
+  </form>
+
+  <div class="displayBook">
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
